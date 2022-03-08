@@ -1,0 +1,5 @@
+upload to s3:
+  script:
+    - aws configure set region Asia Pacific (Mumbai) ap-south-1
+    - touch foo.txt
+    - aws s3 cp foo.txt s3://$S3_BUCKET/foo.txt
